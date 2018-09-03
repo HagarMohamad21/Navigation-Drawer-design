@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/BaseLayout"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/baseProfile"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/profile2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/baseProfile"
+                android:layout_marginTop="5dp"
+                android:text="UserName"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <!---->
+        ***********************************************************************************************************
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/thirdProfile"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/profile1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/thirdProfile"
+                        android:layout_alignRight="@+id/thirdProfile"
+                        android:background="@drawable/item_count"
+                        android:text="1"
+                        android:textColor="@color/darkGray"
+                        android:textSize="10sp" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/secondProfile"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/profile3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/thirdProfile"
+                        android:layout_alignRight="@+id/secondProfile"
+                        android:background="@drawable/item_count"
+                        android:text="1"
+                        android:textColor="@color/darkGray"
+                        android:textSize="10sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <View android:layout_height="5dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="11dp"
+        android:background="@color/orange"></View>
+
+</LinearLayout>
